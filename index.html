@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QuestLog 3D Maps</title>
+
+    <!-- Google Maps API with your key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" 
+            async defer></script>
 </head>
 <body>
 
-    <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="12883629051" data-style="standard" data-from-embed="false"></div><script src="https://strava-embeds.com/embed.js"></script>
-    
+    <h1>Explore New Places in 3D</h1>
+
+    <!-- Map container for Google Maps 3D view -->
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    <!-- Embed Strava activity (optional) -->
+    <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="12883629051" data-style="standard" data-from-embed="false"></div>
+    <script src="https://strava-embeds.com/embed.js"></script>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js"></script>
+
 </body>
 </html>
